@@ -8,9 +8,6 @@
     "url": "git+https://github.com/gtdev87/tuber-macstack.git"
   },
   "author": "Gregory Thompson",
-  "files": [
-    "lib"
-  ],
   "main": "index.js",
   "keywords": [],
   "engines": {

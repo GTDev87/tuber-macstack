@@ -22,6 +22,7 @@ module.exports = {
     fs.writeFileSync(dockerfileInFolderName, dockerFileData, "UTF-8", {'flags': 'w+'});
 
     //write server.js
+    //need to figure out a way to pass dependencies through
     var serverJsData = 
       "var macstack = require('macstack')();\n\n" +
       "var callback = " +

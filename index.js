@@ -6,7 +6,7 @@ var fs = require("fs");
 module.exports = {
   deployController: function(location, sshKey, privateKey, initJsonData, controllerFn, callback) {
 
-    var tmpFolder = ".tmp";
+    var tmpFolder = "tmp";
     var packageJson = JSON.parse(fs.readFileSync("package.json", "utf-8"));
 
     // // http://stackoverflow.com/questions/21194934/node-how-to-create-a-directory-if-doesnt-exist/21196961#21196961

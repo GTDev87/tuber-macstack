@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "",
   "homepage": "https://github.com/GTDev87/tuber-macstack",
-  "repository": "GTDev87/tuber-macstack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtdev87/tuber-macstack.git"
+  },
   "author": "Gregory Thompson",
   "files": [
     "lib"
@@ -21,7 +24,11 @@
   "devDependencies": {},
   "scripts": {
     "test": "gulp",
-    "debug-test": "node debug node_modules/gulp/bin/gulp.js test"
+    "debug-test": "node debug node_modules/gulp/bin/gulp.js test",
+    "start": "node server.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gtdev87/tuber-macstack/issues"
+  }
 }

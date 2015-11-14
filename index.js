@@ -23,11 +23,7 @@ module.exports = {
 
     //write server.js
     //need to figure out a way to pass dependencies through
-    var serverJsData = 
-      "var macstack = require('macstack')();\n\n" +
-      "var callback = " +
-      controllerFn.toString() +
-      ";\ncallback(macstack);\n";
+    var serverJsData = "require('macstack')(" + controllerFn.toString() + ");\n";
 
     var serverInFolderName = tmpFolder + "/" + "server.js";
     fs.writeFileSync(serverInFolderName, serverJsData, "UTF-8", {'flags': 'w+'});

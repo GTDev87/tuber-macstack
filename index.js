@@ -4,8 +4,7 @@ var tuberDeploy = require("tuber-deploy");
 var fs = require("fs");
 
 module.exports = {
-  deployController: function(location, sshKey, privateKey, initJsonData, controllerFn, callback) {
-
+  deployController: function(location, sshKey, privateKey, initJsonDataOrFn, controllerFn, callback) {
     var tmpFolder = "tmp";
     var packageJson = JSON.parse(fs.readFileSync("package.json", "utf-8"));
 
@@ -29,6 +28,6 @@ module.exports = {
     fs.writeFileSync(serverInFolderName, serverJsData, "UTF-8", {'flags': 'w+'});
 
     //maybe just forward dependencies for now
-    tuberDeploy.genericBuildAndCreate(location, tmpFolder, sshKey, privateKey, initJsonData, callback);
+    tuberDeploy.genericBuildAndCreate(location, tmpFolder, sshKey, privateKey, initJsonDataOrFn, callback);
   }
 };

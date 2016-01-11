@@ -15,7 +15,7 @@
     "npm": "1.4.x"
   },
   "dependencies": {
-    "macstack": "0.0.19",
+    "macstack": "0.0.20",
     "tuber-deploy": "0.0.16"
   },
   "devDependencies": {},

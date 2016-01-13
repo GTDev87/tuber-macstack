@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "macstack": "0.0.21",
-    "tuber-deploy": "0.0.16"
+    "tuber-deploy": "0.0.17"
   },
   "devDependencies": {},
   "scripts": {
